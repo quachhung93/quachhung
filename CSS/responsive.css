@@ -1,0 +1,97 @@
+@media (min-width:1024px) {
+
+}
+@media (min-width:768px) and (max-width:1023px) {
+    #Header{
+        overflow:hidden;
+    }
+    #nav{
+        display: block;
+    }
+    #nav > li{
+        display:block;
+        
+    }
+    #nav .supthuvien{
+        position:initial;
+        padding: 5px 42px;
+        background-color: #ccc;
+    }
+    #Header .search-btn{
+        display:none;
+    }
+    #Header .menu-item{
+        float:right;
+        padding: 16px 20px;
+        top:0;
+        right:0;
+        position: absolute;
+        display:block;
+    }
+    #Header .menu-icon{
+        font-size: 22px;
+        background-color: red;
+        border: none;
+        color: white;
+    }
+    #Header .menu-item:hover{
+        background-color:white;
+        
+    }
+    #Header .menu-item .menu-icon:hover{
+        background-color:white;
+        color:red;
+    }
+    .khoahoc .khoahoc1 li, .khoahoc2 li, .khoahoc3 li, .khoahoc4 li, .khoahoc5 li, .khoahoc6 li{
+        box-sizing: unset;
+    }
+    .khoahoc .headerkhoahoc li{
+        box-sizing: unset;
+    }   
+    .body-content .item-chieusinh {
+        padding-left: 0px;
+    }
+}
+@media (max-width:768px) {
+    #Header{
+        overflow:hidden;
+    }
+    #nav{
+        display: block;
+    }
+    #nav > li{
+        display:block;
+    }
+    #Header .search-btn{
+        display:none;
+    }
+    #Header .menu-item{
+        float:right;
+        padding: 16px 20px;
+        top:0;
+        right:0;
+        position: absolute;
+    }
+    #Header .menu-icon{
+        font-size: 22px;
+        background-color: red;
+        border: none;
+        color: white;
+    }
+    #Header .menu-item:hover{
+        background-color:white;
+    }
+    #Header .menu-item .menu-icon:hover{
+        background-color:white;
+        color:red;
+    }
+    .khoahoc .khoahoc1 li, .khoahoc2 li, .khoahoc3 li, .khoahoc4 li, .khoahoc5 li, .khoahoc6 li{
+        box-sizing: unset;
+    }
+    .khoahoc .headerkhoahoc li{
+        box-sizing: unset;
+    }   
+    .body-content .item-chieusinh {
+        padding-left: 0px;
+    }
+}

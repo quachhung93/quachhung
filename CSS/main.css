@@ -1,0 +1,473 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    scroll-behavior: smooth;
+}
+.row{
+    margin-left: 8px;
+    margin-right: 8px
+}
+.col-half{
+    width: 50%;
+}
+.col{
+    float:left;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+.col-thrid{
+    width: 33.3333%;
+}
+#base{
+
+}
+#Header{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    margin-top: 0px;
+    height: 55px;
+    background-color:red;
+    z-index: 10;
+}
+
+#nav{
+    display: inline-block;
+}
+
+#nav > li{
+    display: inline-block;
+    position: relative;   
+}
+#nav > li > a {
+    color:white;
+    text-transform: uppercase;
+}
+#nav li a {
+    line-height: 55px;
+    text-decoration: none;
+    padding: 0 24px;
+}
+#nav li:hover a {
+    display: inline-block;
+    
+}
+#nav > li:hover > a {
+    color:white;
+    background-color: red;
+}
+#nav .supdaotao, .supgioithieu, .suphoatdong, .supkiemdinh, .supthuvien{
+    list-style-type: none;
+}
+#nav .supgioithieu a {
+    color:red;
+    min-width: 200px;
+}
+#nav .it-icon1 {
+    font-size: 12px;
+}
+#nav li:hover .supgioithieu {
+    display: block;
+    
+}
+#nav .supgioithieu li:hover a{
+    background-color: red;
+    color: white;
+    
+}
+#nav .supgioithieu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#nav .supdaotao a {
+    color:red;
+    min-width: 310px;
+}
+#nav li:hover .supdaotao {
+    display: block;
+}
+#nav .supdaotao li:hover a{
+    background-color: red;
+    color: white;
+}
+#nav .supdaotao {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#nav .supkiemdinh a {
+    color:red;
+    min-width: 250px;
+}
+#nav li:hover .supkiemdinh {
+    display: block;
+}
+#nav .supkiemdinh li:hover a{
+    background-color: red;
+    color: white;
+}
+#nav .supkiemdinh {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#nav .suphoatdong a {
+    color:red;
+    min-width: 300px;
+}
+#nav li:hover .suphoatdong {
+    display: block;
+}
+#nav .suphoatdong li:hover a{
+    background-color: red;
+    color: white;
+}
+#nav .suphoatdong {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#nav .supthuvien a {
+    color:red;
+    min-width: 200px;
+}
+#nav li:hover .supthuvien {
+    display: block;
+}
+#nav .supthuvien li:hover a{
+    background-color: red;
+    color: white;
+}
+#nav .supthuvien {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#Header .menu-item{
+    display:none;
+}
+#Header .search-btn{
+    float:right;
+    padding: 0 20px;
+    cursor: pointer;
+}
+#Header .search-icon{
+    color: white;
+    font-size: 22px;
+    line-height: 55px;
+    display: block;
+}
+#Header .search-btn:hover {
+    background-color: white;
+}
+#Header .search-icon:hover{
+    color:red;
+    background-color: white;
+}
+
+#Slider{
+    background: url('/STIEweb/img/img slider/imgslider1.jpg') top center / cover no-repeat;
+    padding-top: 50%;
+    position: relative;
+}
+#Slider .textcontent{
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 45px;
+    width: 100%;
+}
+#Slider .namecontent{
+    font-size: 40px;
+    font-weight: 600;
+}
+#Slider .subtext{
+    font-size: 30px;
+}
+#Content{
+
+}
+#Content .header-content{
+    width: 800px;
+    height: 500px;
+    margin: 45px 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#Content .header-content .tencongty{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+#Content .header-content .loichao{
+    font-style: italic;
+    margin-bottom: 25px;
+}
+#Content .header-content .loimodau{
+    text-align: justify;
+    line-height: 20px;
+}
+#Content .header-content .sologan{
+    font-style: italic;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#Content .header-content .nguoidaidien{
+    margin-top: 25px;
+    font-weight: 600;
+    text-align: right;
+}
+#Content .timeline .nametimeline{  
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 30px;
+    letter-spacing: 4px;
+    background: red;
+    line-height: 55px;
+}
+#Content .timeline .anhtimeline{
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+    padding-top: 45px;
+}
+.body-content .dangkylophoc{ 
+    background-color:#ccc;
+}
+.dangkylophoc .header-dangkylophoc{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 25px;
+    padding-top: 5px;
+    line-height: 50px;
+    background-color: red;
+}
+.khoahoc{
+    background-color:#ccc;
+    padding-bottom: 50px;
+}
+.khoahoc .khoahoc1, .khoahoc2, .khoahoc3, .khoahoc4, .khoahoc5, .khoahoc6 {
+    line-height: 20px;
+    text-align: center;
+}
+.khoahoc .headerkhoahoc{
+    text-align: center;
+    padding-top:20px;
+}
+.khoahoc .headerkhoahoc li {
+    display:inline-block;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 10px;
+    background-color:cornflowerblue;
+    margin-bottom: 2px;
+}
+.khoahoc .khoahoc1 li, .khoahoc2 li, .khoahoc3 li, .khoahoc4 li, .khoahoc5 li, .khoahoc6 li{
+    display:inline-block;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 10px;
+    background-color:#fff;
+    margin-bottom: 2px;
+}
+.khoahoc .khoahoc1 .tt, .khoahoc2 .tt, .khoahoc3 .tt{
+    background-color: red;
+}
+.chieusinh{
+    width: 100%;
+    text-align: center;
+}
+.body-content .imgitem1, .imgitem2, .imgitem3{
+    height: 260px;
+    width: 250px;
+    display: block;
+}
+.imgitem1:hover, .imgitem2:hover, .imgitem3:hover{
+    opacity: 0.6;
+}
+.body-content .item-chieusinh{
+    font-size:15px;
+    padding-top: 30px;
+    display: inline-block;
+    text-align: center;
+    padding-left: 10px;
+}
+.item-chieusinh .body-itemchieusinh{
+    background-color: #fff;
+    padding-bottom: 20px;
+}
+.body-content .header-chieusinh{
+    font-size:15px;
+    padding-top: 12px;
+    padding-bottom: 15px;
+}
+.body-content .time-chieusinh{
+    padding-bottom: 15px;
+    opacity: 0.6;
+}
+
+.body-content .btn-chieusinh{
+    padding: 8px;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    background-color:black;
+    border:none;
+}
+.body-content .btn-chieusinh:hover{
+    background-color:red;
+    color:#fff;
+    cursor: pointer;
+}
+.modal.open{
+    display: flex;
+}
+.modal {
+    background:rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display:none;
+    align-items: center;
+    justify-content: center;
+    animation: modalFadein ease 0.5s;
+}
+.modal-container{
+    background:#fff;
+    width: 600px;
+    max-width: calc(100%-32px);
+    min-height: 400px;
+    font-size:20px;
+    position: relative;
+}
+.modal-close{
+    position: absolute;
+    right:0;
+    padding: 12px;
+    opacity: 0.8;
+    color:#fff;
+}
+.modal-close:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.modal .icon-modal{
+    padding-right: 6px;
+}
+.modal-header{
+    text-align: center;
+    padding: 20px;
+    background-color:red;
+    color:white;
+}
+.modal-body{
+    padding:16px;
+}
+.modal-label{
+    display: block;
+    padding-bottom: 6px;
+    padding-top:12px;
+}
+.modal-inputlabel{
+    width: 100%;
+    height:40px;
+    padding: 6px;
+    border:1px solid #ccc;
+}
+.btn-modal-dangky{
+    align-items: center;
+    justify-content:center;
+    color:#fff;
+    font-size:20px;
+    text-transform: uppercase;
+    border: none;
+    width: 100%;
+    background-color: red;
+    margin-top: 24px;
+    padding:12px;
+}
+.btn-modal-dangky:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+#Footer{
+
+}
+@keyframes modalFadein {
+    from{ 
+        opacity: 0.7;
+        transform: translatey(-150px);
+    }
+    to{ 
+        opacity:1;
+        transform: translateY(0);
+    }
+    
+}
+.contract{
+    height: 300px;
+}
+.contract .header-contract{
+    text-align: center;
+    font-size: 30px;
+    padding-top:30px;
+    padding-top: 12px;
+    padding-bottom: 9px;
+    background-color: red;
+    margin-bottom: 30px;
+}
+.contract .contract-content{
+    align-items: center;
+    justify-content:center;
+}
+.contract .form-contract{
+    width: 50%;
+    float:left;
+    padding-left: 20%;
+}
+.contract .cus-contract{
+    width: 50%;
+    float:left;
+    padding-left: 5%;
+}
+.cus-contract .cus-info{
+    display: block;
+    width: 55%;
+    height: 30px;
+    padding: 4px;
+    margin-top: 8px;
+}
+.cus-contract .btn-contract{
+    margin-top: 20px;
+    padding:8px 16px;
+    color: red;
+}
+
+.cus-contract .btn-contract{
+    cursor: pointer;
+    margin-left: 48%;
+}
+
+
